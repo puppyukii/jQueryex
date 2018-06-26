@@ -23,7 +23,8 @@
 $(document).ready(function(){
     $("#fadeIn").mouseenter(function(){
         $("img").fadeIn();
-
+        $("img").fadeIn("slow");
+       $("img").fadeIn(3000);
     });
 });
 
@@ -41,13 +42,13 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $("#fadeTo").mouseenter(function(){
-        $("fadeTo").fadeTo("slow", 0.15);
+        $("img").fadeTo("slow", 0.15);
 
     });
 });
 $(document).ready(function(){
     $("#slideDown").dblclick(function(){
-        $("slideDown").slideDown("slow");
+        $("img").slideDown("slow");
     });
 });
 $(document).ready(function(){
