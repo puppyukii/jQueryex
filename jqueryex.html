@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/home/ukistu14/Documents/uki3/jquery/jquery-3.3.1.js"></script>
+    <script src="/home/ukistu14/Documents/uki3/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("img").hide();
+        });
+        $("#show").click(function(){
+            $("img").show();
+        });
+    });
+    $(document).ready(function(){
+    $("#toggle").click(function(){
+        $("img").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#fadeIn").mouseenter(function(){
+        $("img").fadeIn();
+
+    });
+});
+
+$(document).ready(function(){
+    $("#fadeOut").mouseenter(function(){
+        $("img").fadeOut();
+
+    });
+});
+$(document).ready(function(){
+    $("#fadeToggle").mouseenter(function(){
+        $("img").fadeToggle();
+
+    });
+});
+$(document).ready(function(){
+    $("#fadeTo").mouseenter(function(){
+        $("fadeTo").fadeTo("slow", 0.15);
+
+    });
+});
+$(document).ready(function(){
+    $("#slideDown").dblclick(function(){
+        $("slideDown").slideDown("slow");
+    });
+});
+$(document).ready(function(){
+    $("#slideUp").dblclick(function(){
+        $("img").slideUp("slow", 0.15);
+
+    });
+});
+$(document).ready(function(){
+    $("#slideToggle").dblclick(function(){
+        $("img").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#Start Animation").click(function(){
+        $("img").animate({left: '250px'});
+    });
+});
+
+    </script>
+    </head>
+    <body>
+
+  <img src="/home/ukistu14/Documents/uki3/jquery/jquery ex/5.jpeg">
+
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+    <button id="fadeIn">fadeIn</button>
+    <button id="fadeOut">fadeOut</button>
+    <button id="fadeToggle">fadeToggle</button>
+    <button id="fadeTo">fadeTo</button>
+    <button id="slideDown">slideDown</button>
+    <button id="slideUp">slideUp</button>
+    <button id="slideToggle">slideToggle</button>
+    <button id="Start Animation">Start Animation</button>
+
+    </body>
+    </html>
